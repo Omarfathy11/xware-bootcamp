@@ -1,0 +1,22 @@
+
+
+create table if not exists person(
+	 personId serial primary key,
+	lastName varchar(50) not null,
+	firstName varchar(50) not null
+	);
+	
+Create table if not exists Address (
+    address_id serial primary key,
+	city  varchar(50),
+	state varchar(50),
+	person_Id int references person
+);
+insert
+insert into person (personId, firstName, lastName) values (1, ' Allen', 'Wang');
+insert into person (personId, firstName, lastName) values (2, 'Bob', 'Alice ');
+
+insert into Address (address_id, person_Id, city, state) values (1, 2, ' New York City', 'New York');
+insert into Address (address_Id, person_Id, city, state) values (2, 3, 'Leetcode', 'California');
+join
+select Person.personId  , lastname , firstname , Address.address_Id , city , state from Address INNER JOIN Person ON Address.person_Id = Person.personId ;
