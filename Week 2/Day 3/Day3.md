@@ -61,9 +61,9 @@
 	
 Create table if not exists Address (
    * address_id serial primary key,
-	* city  varchar(50),
-	* state varchar(50),
-	* person_Id int references person
+   * city  varchar(50),
+   * state varchar(50),
+   * person_Id int references person
 );
  * insert
 * insert into person (personId, firstName, lastName) values (1, ' Allen', 'Wang');
