@@ -16,11 +16,6 @@
  
  # answer
 
-```
-* use facebook
-```
-to db facebook
-
 # this command for Design Messaging and Notification System in MongoDB
 
 * create database
