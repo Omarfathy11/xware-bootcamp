@@ -12,7 +12,7 @@ Write You Commands in Your `xware-bootcamp`
 * Then After That Put All Your Commands You Learned To Install Postgresql, And Every Command Should Start With `* >>> ` Then Write The Command.
 * Then Put, `# Install pgAdmin`.
 * Then After That Put All Your Commands You Learned To Install pgAdmin, And Every Command Should Start With `* >>> ` Then Write The Command.
-   
+# answer
    
 # install postgresql 
 * >>>  sudo apt update
