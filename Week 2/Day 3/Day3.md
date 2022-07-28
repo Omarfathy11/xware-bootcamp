@@ -50,7 +50,7 @@
 * There is no address in the address table for the personId = 1 so we return null in their city and state.
 * addressId = 1 contains information about the address of personId = 2.
 
-
+# answer 
 
 
  * create table if not exists person(
