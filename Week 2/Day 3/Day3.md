@@ -54,9 +54,9 @@
 
 
  * create table if not exists person(
-	* personId serial primary key,
-	* lastName varchar(50) not null,
-	* firstName varchar(50) not null
+   * personId serial primary key,
+   * lastName varchar(50) not null,
+   * firstName varchar(50) not null
 	);
 	
 Create table if not exists Address (
