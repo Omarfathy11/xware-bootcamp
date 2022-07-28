@@ -1,5 +1,5 @@
 # This is Transaction Exercise
-# question and answer
+* question and answer
 Create a new transaction then:
 Insert a new record into the Professor table
 Insert a new record into the Student table
