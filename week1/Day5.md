@@ -1,4 +1,19 @@
 # Day 5
+## Exercises - 1
+Install postgresql and pgAdmin
+How connect pgAdmin to Postgresql
+Write You Commands in Your `xware-bootcamp`
+* Clone Your Repo `xware-bootcamp`
+* Create Folder `Week1` if Not Exists.
+* Create File `Day5.md` Inside `Week1` Folder.
+* In Your `Day5.md` File Put These Sentences.
+* `# Day 5`.
+* Then Put, `# Install Postgresql`.
+* Then After That Put All Your Commands You Learned To Install Postgresql, And Every Command Should Start With `* >>> ` Then Write The Command.
+* Then Put, `# Install pgAdmin`.
+* Then After That Put All Your Commands You Learned To Install pgAdmin, And Every Command Should Start With `* >>> ` Then Write The Command.
+   
+   
 # install postgresql 
 * >>>  sudo apt update
 // to update
