@@ -1,13 +1,14 @@
 # Exercies 
-* Create your xware-bootcamp repository on Github.
-* Clone xware-bootcamp repo to your Desktop.
-* Create a new folder week1 using command kine mkdir.
-* Create new file inside week1 called README.md using touch.
-* Add this line # Hello World From My New Shiny Repository xware-bootcamp to the file README.md using echo "" > README.md
-* add the folder week1 to the staging.
-* Commit the staged files.
-* See your tracking status using git status to make sure all files are committed.
-* Push your changes to Gitlab using git push.
+# Create your xware-bootcamp repository on Github.
+# Clone xware-bootcamp repo to your Desktop.
+# Create a new folder week1 using command kine mkdir.
+# Create new file inside week1 called README.md using touch.
+# Add this line # Hello World From My New Shiny Repository xware-bootcamp to the file README.md using echo "" > README.md
+# add the folder week1 to the staging.
+# Commit the staged files.
+# See your tracking status using git status to make sure all files are committed.
+# Push your changes to Gitlab using git push.
+
 # answer
 
 ### Hello World From my new shiny repository xware-bootcampd@d-HP-ZBook-Studio-G3:~$ sudo apt update
