@@ -23,53 +23,55 @@
 * addressId is the primary key column for this table.
 * Each row of this table contains information about the city and state of one person with ID = PersonId.
 
-* Example 1:
+# Example 1:
 * Input: 
-* Person table:
+# Person table:
 * +----------+----------+-----------+
 * | personId | lastName | firstName |
 * +----------+----------+-----------+
 * | 1        | Wang     | Allen     |
 * | 2        | Alice    | Bob       |
 * +----------+----------+-----------+
-* Address table:
+# Address table:
 * +-----------+----------+---------------+------------+
 * | addressId | personId | city          | state      |
  +-----------+----------+---------------+------------+
 * | 1         | 2        | New York City | New York   |
 * | 2         | 3        | Leetcode      | California |
 * +-----------+----------+---------------+------------+
-* Output: 
+ # Output: 
 * +-----------+----------+---------------+----------+
 * | firstName | lastName | city          | state    |
 * +-----------+----------+---------------+----------+
 * | Allen     | Wang     | Null          | Null     |
 * | Bob       | Alice    | New York City | New York |
 * +-----------+----------+---------------+----------+
-* Explanation: 
-* There is no address in the address table for the personId = 1 so we return null in their city and state.
-* addressId = 1 contains information about the address of personId = 2.
+# Explanation: 
+- 1There is no address in the address table for the personId = 1 so we return null in their city and state.`
+- `addressId = 1 contains information about the address of personId = 2.`
 
 # answer 
 
 
- * create table if not exists person(
-   * personId serial primary key,
-   * lastName varchar(50) not null,
-   * firstName varchar(50) not null
+ # create table if not exists person(
+    - `personId serial primary key,`
+   - `lastName varchar(50) not null,`
+   - `firstName varchar(50) not null`
 	);
 	
-Create table if not exists Address (
-   * address_id serial primary key,
-   * city  varchar(50),
-   * state varchar(50),
-   * person_Id int references person
+# Create table if not exists Address (
+   - `address_id serial primary key,`
+   - `city  varchar(50),`
+   - `state varchar(50),`
+   `person_Id int references person`
 );
- * insert
-* insert into person (personId, firstName, lastName) values (1, ' Allen', 'Wang');
-* insert into person (personId, firstName, lastName) values (2, 'Bob', 'Alice ');
+## INSERT steps
 
-* insert into Address (address_id, person_Id, city, state) values (1, 2, ' New York City', 'New York');
-* insert into Address (address_Id, person_Id, city, state) values (2, 3, 'Leetcode', 'California'); 
+- `insert into person (personId, firstName, lastName) values (1, ' Allen', 'Wang');`
+- `insert into person (personId, firstName, lastName) values (2, 'Bob', 'Alice ');`
 
-* select Person.personId  , lastname , firstname , Address.address_Id , city , state from Address INNER JOIN Person ON Address.person_Id = Person.personId ;
+- `insert into Address (address_id, person_Id, city, state) values (1, 2, ' New York City', 'New York');`
+- `insert into Address (address_Id, person_Id, city, state) values (2, 3, 'Leetcode', 'California');` 
+## JOIN steps
+
+- `select Person.personId  , lastname , firstname , Address.address_Id , city , state from Address INNER JOIN Person ON Address.person_Id = Person.personId ;`
