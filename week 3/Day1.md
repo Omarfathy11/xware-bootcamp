@@ -18,11 +18,12 @@ create table if not exists Person(
 +----+------------------+
 ```
 
-insert into Person(email) values ('JOHN@EXAMPLE.COM');
-insert into Person(email) values ('JOHN@EXAMPLE.COM');
-insert into Person(email) values ('BOB@EXAMPLE.COM');
-insert into Person (email) values ('OMAR@EXAMPLE.COM');
-insert into Person(email) values ('OMAR@EXAMPLE.COM');
+- insert into Person(email) values ('JOHN@EXAMPLE.COM');
+- insert into Person(email) values ('JOHN@EXAMPLE.COM');
+- insert into Person(email) values ('BOB@EXAMPLE.COM');
+- insert into Person (email) values ('OMAR@EXAMPLE.COM');
+- insert into Person(email) values ('OMAR@EXAMPLE.COM');
+
  select lower(email) from person;
  ```
   id |      email       
