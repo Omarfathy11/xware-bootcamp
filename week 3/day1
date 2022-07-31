@@ -1,17 +1,11 @@
 SQL
+
 ```
-Table: Person
-+-------------+---------+
-| Column Name | Type    |
-+-------------+---------+
-| id          | int     |
-| email       | varchar |
-+-------------+---------+
-```
-# create table if not exists Person(
+create table if not exists Person(
   - `id serial primary key,`
 	- `email varchar(30) not null check(lower(email)=email)`
 	);
+```	
 
 Person table:
 +----+------------------+
