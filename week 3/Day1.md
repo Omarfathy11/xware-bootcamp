@@ -18,12 +18,12 @@ create table if not exists Person(
 +----+------------------+
 ```
 
-- insert into Person(email) values ('JOHN@EXAMPLE.COM');
-- insert into Person(email) values ('JOHN@EXAMPLE.COM');
+- insert into Person(email) values ('john@example.com');
+- nsert into Person(email) values ('JOHN@EXAMPLE.COM');
+- insert into Person(email) values ('BOO@EXAMPLE.COM');
 - insert into Person(email) values ('BOB@EXAMPLE.COM');
 - insert into Person (email) values ('OMAR@EXAMPLE.COM');
 - insert into Person(email) values ('OMAR@EXAMPLE.COM');
-
  select lower(email) from person;
  ```
   id |      email       
@@ -49,6 +49,7 @@ Output:
 +----+------------------+
 ```
 DELETE FROM person a USING person b WHERE a.id < b.id AND a.email = b.email;
+
 select lower(email) from person;
 ```
        id |      email       
