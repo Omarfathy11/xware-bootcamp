@@ -7,7 +7,8 @@ create table if not exists Person(
 );
 ```	
 
-Person table:
+# Person table:
+```
 +----+------------------+
 | id | email            |
 +----+------------------+
@@ -15,8 +16,9 @@ Person table:
 | 2  | bob@example.com  |
 | 3  | john@example.com |
 +----+------------------+
+```
 
- insert into Person(email) values ('JOHN@EXAMPLE.COM');
+insert into Person(email) values ('JOHN@EXAMPLE.COM');
 insert into Person(email) values ('JOHN@EXAMPLE.COM');
 insert into Person(email) values ('BOB@EXAMPLE.COM');
 insert into Person (email) values ('OMAR@EXAMPLE.COM');
