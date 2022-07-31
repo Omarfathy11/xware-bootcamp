@@ -2,9 +2,9 @@ SQL
 
 ```
 create table if not exists Person(
-  - `id serial primary key,`
-	- `email varchar(30) not null check(lower(email)=email)`
-	);
+  id serial primary key,
+  email varchar(30) not null check(lower(email)=email)
+);
 ```	
 
 Person table:
